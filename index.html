@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="keywords" content="JQUERY,HTML5,CSS3,JQM">
+	<meta name="description" content="這是我的實習作品">
+	<meta name="author" content="Aiirly.com網頁設計師-0900-000-000">
+	
+  <!-- 引入 jQuery Mobile 樣式 -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- 自訂 jQuery Mobile 配色主題，注意順序位置 -->
+	<link href="css/themes/ac1207.css" rel="stylesheet" type="text/css">
+<!-- 引入 jQuery 庫 -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.autoInitializePage = false;
+      $.mobile.hashListeningEnabled = false;
+    });
+
+    function mobileInitPage() {
+      $.mobile.hashListeningEnabled = true;
+      $.mobile.initializePage();
+    };
+  </script>
+  <!-- 引入 jQuery Mobile 庫 -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- GK Loader use RequireJS to load module -->
+  <script src="http://requirejs.org/docs/release/2.1.11/minified/require.js"></script>
+  <!--Plug in GK-->
+  <script src="http://jqmdesigner.appspot.com/components/jquery.gk/jquery.gk.min.js"></script>
+  <!-- Load GK components -->
+  <script components="http://jqmdesigner.appspot.com/components/gk-ext/bxslider.html,http://jqmdesigner.appspot.com/components/gk-ext/image.html,http://jqmdesigner.appspot.com/components/gk-ext/google-sheets-table.html" callback="mobileInitPage" src="http://jqmdesigner.appspot.com/components/gk-loader/gk-loader.js"></script>	
+  <script>
+$(document).on("pageshow", function () {
+  /* Powered by http://bxslider.com/ */
+  $(".bxslider").bxSlider({auto:"true"});
+});   
+</script> 
+  <title>Aiirly.com-心の東山咖啡莊園-JQM實習網站作品</title>
+</head>
+
+<body>
+	<!-- Page: home  -->
+  <div id="page1" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a>
+      <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+    </div>
+    <div role="main" class="ui-content">
+	  <ul is="bxslider" style="width:100%" captions="true">
+      <li> <img style="width:100%" src="images/photo1.jpg" title="廣告BANNER文字1"></li>
+      <li> <img style="width:100%" src="images/photo2.jpg" title="廣告BANNER文字2"> </li>
+      <li> <img style="width:100%" src="images/photo3.jpg" title="廣告BANNER文字3"></li>
+      <li> <img style="width:100%" src="images/photo4.jpg" title="廣告BANNER文字4"></li>
+      <li> <img style="width:100%" src="images/photo5.jpg" title="廣告BANNER文字5"></li>
+    </ul>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">心の東山咖啡莊園</li>
+      <li><a href="#page2"><img src="images/Geography_03.jpg" class>關於東山</a></li>
+      <li><a href="#page3"><img src="images/Coffee-goods_19.jpg" class>咖啡禮品</a></li>
+      <li><a href="#page12"><img src="images/foods_01.jpg" class>餐飲特色</a></li>
+      <li><a href="#page4"><img src="images/Geography_21.jpg" class>交通景點</a></li>
+      <li><a href="#page5"><img src="images/tel.png" class>連絡我們</a></li>
+    </ul>
+	</div>	
+	<div data-position="fixed" data-role="footer" data-theme="b">
+	<div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a> </li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a> </li>
+		  <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+          <li> <a href="#page4" data-icon="location">交通景點</a> </li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a> </li>
+        </ul>
+      </div>
+	  </div>
+  </div>
+  
+<div id="page2" data-role="page" data-theme="b">
+	<div data-role="panel" id="myPanel">
+	<h2>JQM設計記錄</h2>
+	<p>使用的軟體：jQuery Mobile<br>使用的平台：EZOAPP<br>本設計費時約：48小時<br>本網頁完成時間：1071206<br>設計師：Aiirly.com</p>
+	<a href="#page2" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">close</a>	
+	</div>
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a>
+	  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+	</div>
+    <div role="main" class="ui-content">
+    <h3 is="gk-text">關於東山</h3>
+	<img style="width:50%;" src="images/Geography_11.jpg"><img style="width:50%;" src="images/Geography_13.jpg">
+    <p>提到東山兩字，大多數人都會想接著講鴨頭吧？然而聞名遐邇東山的咖啡可是台灣三大產地之一唷。海拔介於五百公尺至八百公尺之間的東山地區，日夜溫差差達10度，鄰近的曾文水庫、烏山頭水庫及白河水庫三大水庫，可調節溼度，另外酸鹼度適中的土壤，極為適合咖啡生長，造就當地咖啡飄香，使所生產咖啡具獨特道地的香氣。
+這條175號縣道全長20公里，有北、南及東山鄉二坑埔3處入口，這條公路兩側山坡皆種植咖啡樹，由於整條公路景觀良好，可以遠望嘉南平原，白天可以遠眺，晚上又成了觀賞嘉南平原夜景的極佳之地，因此，慢慢的在175縣道聚集了許多特色景觀咖啡廳，漸漸的175號縣道便被稱為咖啡公路(或「175咖啡公路」或東山咖啡公路)，其中有以位於仙公廟前的「東山有機咖啡」與「大鋤花間」最為知名與為人所推崇。
+東山咖啡莊園的創辦人，是當地最早種咖啡、賣咖啡的。20餘年前，當時在孚佑宮當廟祝，在三十四歲那年，廟祝改行成為了崁頭山唯一的咖啡農。
+咖啡樹每年農曆9-12月為成熟期、12-3月開花，無論是紅紅綠綠結滿枝頭的果實亦或是帶有些許茉莉香的小白花，都是相當別緻的風光，但除了咖啡之外，每年6月有荔枝，7-8月有龍眼，10-11月有椪柑及咖啡，農產相當豐富。
+雖是純樸的鄉間地方，倘若有機會來到這個地方時，不妨找個地方喝杯咖啡，遠眺優美的風景，細細品味一段悠閒愜意的時光。</p>
+   
+   <h3 is="gk-text">關於 心の東山咖啡莊園  <img style="width:15%;" src="images/logo.jpg" is="image"></h3>
+	<img style="width:70%;" src="images/Geography_09.jpg"><br>
+	<p>心の東山咖啡莊園在台南市東山區已經營多年，並擁有7000坪的自家休閒農場，用來種植東山咖啡，培育過程中絕不噴農藥，也不強行發酵，烘焙出來的咖啡除了帶有獨特的甘醇風味之外，最大的特色便是喝了不會心悸，也因此附近的上班族都很放心的每天來上一杯。</p><br>  
+   <p>地址：台南市東山區東中村中興路10XX號 <a href="#page4"><img style="width:7%;" src="images/GoogleMaps.png"></a>
+    <br>營業時間：週一至週五10:00~16:30； 週六、日12:00~18:30
+	  <br>電話：(06)680-08XX
+      <br>
+      <a href="#myPopup" data-rel="popup" data-transition="fade" data-position-to="window" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-top ui-btn-inline">網頁設計師:陳儀容</a></p>
+    
+		<div data-role="popup" data-dismissible="false" id="myPopup" class="ui-content" data-arrow="b"> 
+		<div data-role="header">	
+			<a href="#" class="ui-btn ui-btn-inline ui-btn-right ui-icon-delete ui-btn-icon-notext ui-shadow ui-corner-all" data-rel="back">關閉</a>
+        
+        <h3>設計師個人資訊</h3>
+      </div>
+        <div data-role="main" class="ui-content">
+        <p>你好：我是Aiirly.com<br>
+            我的LINE=xxx<br>
+            我的手機是0900-000-000</p>
+      </div>
+      </div>
+	<a href="#page11" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-notext ui-corner-all" data-transition="flip">查訂購單按鈕</a>	
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Cr7j2-7qLLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+<!--  <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">了解設計一二事</a> -->
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" target="_top" data-icon="info">關於東山</a> </li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a> </li>
+		  <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+          <li> <a href="#page4" data-icon="location">交通景點</a> </li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="page3" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a>
+	  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+	</div>
+    <div role="main" class="ui-content">
+	 <h3 is="gk-text">咖啡產品訂購</h3>
+    <div data-role="collapsibleset">
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>濾泡式咖啡</h3>
+        <h3 is="gk-text">東山濾泡式咖啡</h3>
+        <a href="#myPopup-photo1" data-rel="popup" data-position-to="window">
+			<img style="width:100%;" src="images/Coffee-goods_10.jpg" is="image">
+		</a>
+        <p>濾泡掛式咖啡是將咖啡粉裝在濾袋裡，兩側的夾板掛在杯子上，沖完後即可丟掉，讓你在忙碌也能喝到彷彿濾滴沖泡咖啡的新鮮。<br><br>
+        <br>一包濾泡式咖啡沖出多少cc數較適合呢？<br><br>
+		建議10g的咖啡粉約沖泡200cc左右比較香醇喔。可以再視個人口味酌量增減。<br>
+		</p>
+        <a href="#page6" class="ui-btn ui-btn-inline">訂購本商品</a>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>即溶咖啡</h3>
+        <h3 is="gk-text">東山即溶咖啡</h3>
+        <a href="#myPopup-photo2" data-rel="popup" data-position-to="window">
+			<img style="width:100%;" src="images/Coffee-goods_06.jpg" is="image">
+        </a>
+		<p>嚴選東山咖啡原豆，採取有機細心栽培農法，孕育出平衡度好、低酸度、餘韻有寡香的咖啡豆；加入紐西蘭有機牛奶粉，即溶好沖泡，方便飲用，品嘗不平凡的小確幸。
+        <br></p>
+        <a href="#page7" class="ui-btn ui-btn-inline">訂購本商品</a>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>蜂蜜</h3>
+        <h3 is="gk-text">東山龍眼蜂蜜</h3>
+        <a href="#myPopup-photo3" data-rel="popup" data-position-to="window">
+			<img style="width:100%;" src="images/Coffee-goods_12.jpg" is="image">
+        </a>
+		<p>蜂蜜是天然的保健食品，可視個人口味酌量增減甜度，由於蜂蜜中含有天然維他命及多種礦物質，所以最好不要用熱開水沖泡以免流失營養素。<br>
+        <br>☆龍眼蜜香氣濃郁口感自然香甜<br>☆玻璃瓶裝，美觀輕巧。</p>
+        <a href="#page8" class="ui-btn ui-btn-inline">訂購本商品</a>
+      </div>	
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>龍眼乾</h3>
+        <h3 is="gk-text">東山炭焙龍眼</h3>
+        <a href="#myPopup-photo4" data-rel="popup" data-position-to="window">
+			<img style="width:100%;" src="images/Coffee-goods_08.jpg" is="image">
+        </a>
+		<p>☆天然安全：採用粗放式的果園管理，安全無毒<br>
+		☆窯焙柴燻：堅持手工製作的柴燒龍眼肉，幾十年的經驗以及熟練的控制火候技術，讓龍眼有著濃郁的香氣。
+        <br></p>
+        <a href="#page9" class="ui-btn ui-btn-inline">訂購本商品</a>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>咖啡豆</h3>
+        <h3 is="gk-text">東山咖啡原豆</h3>
+        <a href="#myPopup-photo5" data-rel="popup" data-position-to="window">
+			<img style="width:100%;" src="images/Coffee-goods_13.jpg" is="image">
+        </a>
+		<p>☆百分之百採用頂級東山咖啡原豆<br>☆咖啡生豆100%篩檢，品質穩定 <br>☆咖啡產品乾燥度達97%以上，萃取度最高 
+        <br>☆經典口味,高雅的酸苦平衡、滑順與強度並存，帶有烘烤香氣，以及些微的花香。 </p>
+        <a href="#page10" class="ui-btn ui-btn-inline">訂購本商品</a>
+      </div>
+	</div>	
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" target="_top" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  <div data-role="popup" id="myPopup-photo1" data-overlay-theme="d" >
+    <p>商品放大圖</p>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Coffee-goods_10.jpg" style="width:100%" alt="商品圖片放大顥示"> </div>
+    <div data-role="popup" id="myPopup-photo2" data-overlay-theme="d">
+    <p>商品放大圖</p>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Coffee-goods_06.jpg" style="width:100%" alt="商品圖片放大顥示"> </div>
+    <div data-role="popup" id="myPopup-photo3" data-overlay-theme="d">
+    <p>商品放大圖</p>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Coffee-goods_12.jpg" style="width:100%" alt="商品圖片放大顥示"> </div>
+    <div data-role="popup" id="myPopup-photo4" data-overlay-theme="d">
+    <p>商品放大圖</p>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Coffee-goods_08.jpg" style="width:100%" alt="商品圖片放大顥示"> </div>
+    <div data-role="popup" id="myPopup-photo5" data-overlay-theme="d">
+    <p>商品放大圖</p>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Coffee-goods_13.jpg" style="width:100%" alt="商品圖片放大顥示"> </div>
+  </div>
+<div id="page4" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+	  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+	  </div>
+    <div role="main" class="ui-content">	
+	<p>交通資訊<br><br>
+		【大眾運輸】<br><br>
+		1.台鐵<br>
+		搭至新營火車站→對面的新營客運總站搭「新營往東山」的車次→前往東山，經過東山大街路口後的那一站下車→步行3分鐘即達。<br>
+		2.客運<br>
+		至新營客運總站搭「新營往東山」的車次→前往東山，經過東山大街路口後的那一站下車→步行3分鐘即達。<br><br>
+		【自行開車】<br><br>
+		1.國道三號→在白河交流道下→朝東山/白河方向前進→於172縣道向左轉→於中山路(165縣道前進)→在所前路處微靠右走→於中興路(南100-1鄉道)向左轉→即達。<br>
+		2.國道一號→新營交流道下→長榮路(172縣道)→長榮陸橋下右轉→開元路→左轉東山三路→再左轉東山路→直行至新東路二段→東山大街路口右轉中興南路→即達。</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.8296184641663!2d120.40091990096863!3d23.32193986084979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e8ef7a4f12c3f%3A0x7e156464758fc1de!2z5ZKW5ZWh5paH5YyW6aSoIC0g5p2x5bGx5Y2A6L6y5pyD!5e0!3m2!1szh-TW!2stw!4v1544074401487" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<br><p>週邊景點</p>
+	<img style="width:100%;" src="images/Geography_22.jpg" is="image"><br><br>
+	<p>東山農會咖啡文化館<br>
+	簡介：<br>東山區農會為了保存極具時代意義的古老建築，活化地方產業，營造在地特色暨物盡其用，在農業委員會、文建會、
+	台南市政府的輔導暨補助經費挹注下與地方鄉親的寄望與支持下，東山區農會秉著服務的心與歷史文化責任的傳承，特別進行閒置空間改造，
+	利用農會旁檜木建造的舊倉庫，結合東山區別具規模與特色的咖啡產業，將閒置倉庫打造成屬於東山區民的心靈空間-東山農會咖啡文化館（東山驛站），
+	提供民眾一個富有知性與感性的休憩據點。
+	</p>
+	<img style="width:50%;" src="images/Geography_10.jpg" is="image"><br><br>
+	<p>東山日式碾米廠<br>
+	歷史沿革：<br>位於臺灣臺南市東山區，建於日昭和九年（1934年），於民國九十四年（2005年）9月5日經當時的臺南縣政府公告為歷史建築。<br>
+	建築特色：<br>碾米廠佔地225.90平方公尺，樓高三層，主要建材為杉木。其方位座東朝西，機房東側為精米儲放處，西側則是稻穀堆放處及儲放穀子的庫房</p>
+	<img style="width:70%;" src="images/Geography_16.jpg" is="image"><br><br>
+	<p>關子嶺溫泉<br>
+	歷史沿革：<br>位於臺灣臺南市白河區，為臺灣著名溫泉，其泥漿泉更為罕見，當地設有「關子嶺溫泉風景區」，距臺南市中心大約40公里。<br>
+	溫泉質：<br>鹼性碳酸泉，泉質潤滑帶有硫味，溫度約為75℃間，多為泥漿，故不可飲。洗後全身舒暢，皮膚紅潤光潔，傳言對於皮膚過敏、消除疲勞、美容、胃腸慢性病及風濕關節炎和香港腳均具有相當療效。</p>
+	<img style="width:70%;" src="images/001.jpg" is="image"><br><br>
+	<p>烏山頭水庫<br>
+	歷史沿革：<br>舊稱烏山頭貯水池，是一座位於台灣台南市官田區的水庫，具有水力發電功能，與烏山頭水力發電廠和烏山頭風景區相併在一起。
+	地理位置在海拔468公尺的烏山嶺。由於水庫完成後，官田溪谷遭淹沒。自空中往俯看，其型珊瑚，故有珊瑚潭之雅名。
+	</p>
+	<img style="width:80%;" src="images/002.png" is="image">
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" target="_top" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="page5" data-role="page" data-theme="e">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+	  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+	</div>
+    <div role="main" class="ui-content">
+	  <h3 is="gk-text">聯絡資訊</h3>
+    <h1><img style="width:10%;" src="images/tel.png"> (06)680-08XX</h1>
+    <h1><img style="width:10%;" src="images/Gmail.png"> 123@gmail.com</h1>
+	<h1><img style="width:10%;" src="images/line.png"> abc123</h1>
+    <img style="width:100%;" src="images/service01.png" is="image">
+    <a href="mailto:123@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-left">聯絡信箱</a>
+	  </div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" target="_top" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="page12" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h3>心の東山咖啡莊園</h3>
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+	  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+	</div>
+    <div role="main" class="ui-content">
+	  <h3 is="gk-text">餐飲特色</h3>
+        <img style="width:90%;" src="images/foods_02.jpg" is="image">
+        <p style="word-spacing: 20px">義式三明治佐沙拉  NTD190<br>
+			帕瑪火腿與生菜混搭的食材組合，清爽無負擔，適合作為午間輕食。</p><br><br>
+        <img style="width:90%;" src="images/foods_03.jpeg" is="image">
+        <p style="word-spacing: 20px">經典奶香蜜糖吐司  NTD180<br>
+			經典直條吐司裹上楓糖、淋上牛奶烘烤，充滿幸福甜甜的好滋味。</p><br><br>
+		<img style="width:90%;" src="images/foods_04.jpg" is="image">
+        <p  style="word-spacing: 20px">咖啡生乳捲  NTD130<br>
+			將香醇、滑潤、回甘、微甜的東山咖啡香融入清爽的奶霜，搭配上昭和蛋糕專用麵粉製成的蛋糕， 
+			品嚐阿拉比卡豆的香醇，感受「臺灣咖啡原鄉」的深蘊，徜徉在台南東山175咖啡公路的懷抱中。</p><br><br>
+		<img style="width:90%;" src="images/foods_07.jpg" is="image">
+        <p  style="word-spacing:20px">二~三人套餐  NTD990<br>
+			採用本地野放山雞搭配羅勒煎蛋和溫火燉小肋排，組合成2~3人的套餐，讓您吃安心。</p>
+	  </div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" target="_top" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="page6" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+          <h3>心の東山咖啡莊園</h3>
+          <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+		  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+		</div>        
+    <div role="main" class="ui-content">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8qfpoJxmJ_w2401y3EzfxQgbLHPxy2eGzEObLJFRvsXcpJg/viewform?embedded=true" width="100%" height="2300" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+	  </div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="page7" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+          <h3>心の東山咖啡莊園</h3>
+          <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+		  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+		</div>      
+    <div role="main" class="ui-content">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiKYF3nzumxme_Ae_weoJ2m_731EpuLkZIjrDSBZgo4KQFjw/viewform?embedded=true" width="100%" height="2300" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+<div id="page8" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">      
+          <h3>心の東山咖啡莊園</h3>
+          <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+		  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+		</div>        
+    <div role="main" class="ui-content">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewlouN7th0KO9LULE39TViFhxT2r2yFEkLuEHtYN09Ppi_UQ/viewform?embedded=true" width="100%" height="2734" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="page9" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+          <h3>心の東山咖啡莊園</h3>
+          <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a> 
+		  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+		</div>
+    <div role="main" class="ui-content">
+	<img style="width:100%;" src="images/Coffee-goods_14.jpg" is="image">
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="page10" data-role="page" data-theme="b">
+    <div data-role="header" data-position="fixed" data-theme="b">
+          <h3>心の東山咖啡莊園</h3>
+          <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext ui-corner-all">HOME</a>
+		  <div style="position:absolute;top:6px;right:6px" onclick="location.href=
+'https://www.facebook.com'">
+		<img src="images/fb.png" alt="FB" title="FB" width="30px"></div>
+		</div>       
+    <div role="main" class="ui-content">
+	<img style="width:100%;" src="images/Coffee-goods_18.jpg" is="image">
+	</div>
+    <div data-position="fixed" data-role="footer" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li> <a href="#page2" data-icon="info">關於東山</a></li>
+          <li> <a href="#page3" data-icon="shop">咖啡禮品</a></li>
+          <li> <a href="#page12" data-icon="grid">餐飲特色</a> </li>
+		  <li> <a href="#page4" data-icon="location">交通景點</a></li>
+          <li> <a href="#page5" data-icon="mail">連絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ <div id="page11" data-role="page" data-dialog="true" data-theme="d">
+    <div data-role="header" data-position="fixed" data-theme="d">
+    	<h3>訂購單查詢</h3>
+    	<a href="#page2" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left ui-corner-all">BACK</a>
+    </div>   
+    <div role="main" class="ui-content">
+		<table is="google-sheets-table" id="gk-1130pODw" key="1_HOZxvLllc49BMO0VvrBMQRgV7OqYSRBDmTqANuZUSo" gid="594696208" headers="1"></table>
+	</div>
+    <div data-role="footer" data-position="fixed">
+    	<h3>資料源自Google試算表</h3>
+    </div>
+  </div>
+</body>
+</html>
